@@ -1,6 +1,5 @@
-import math
+from count import countWellFormedParenthesis
 
-def count_well_formed_parenthesis(n: int) -> int:
-    if n < 0:
-        return 0
-    return math.comb(2 * n, n) // (n + 1)
+n = 3
+result = countWellFormedParenthesis(n)
+print(f"Количество корректных скобочных выражений для n={n}: {result}")
